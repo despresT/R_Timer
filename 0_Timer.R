@@ -5,7 +5,6 @@ timer <- function (x, week_graph = FALSE) {
 
     library(lubridate)
     library(data.table)
-                                        #  library(digest)
 
     timer_table <- fread('timer_table.csv')
 
@@ -37,7 +36,6 @@ timer <- function (x, week_graph = FALSE) {
 
     }
 
-                                        #  if(  digest(timer_table, algo = 'sha1') == "82aa84af8ce1c6264a09e6f7cbe194020e9573da") {
     if(dim( timer_table)[1] == 0) {
         timer_table <- NULL
     }
